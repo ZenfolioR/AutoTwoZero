@@ -1,0 +1,30 @@
+{
+  "name": "portfolioautomation",
+  "version": "1.0.0",
+  "description": "portolio automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenfolioR/AutoTwoZero.git"
+  },
+  "keywords": [
+    "automation"
+  ],
+  "author": "rdiaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZenfolioR/AutoTwoZero/issues"
+  },
+  "homepage": "https://github.com/ZenfolioR/AutoTwoZero#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "selenium-webdriver": "^3.6.0",
+    "sinon": "^4.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
