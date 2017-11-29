@@ -1,18 +1,16 @@
 var webdriver = require('selenium-webdriver'),
     By = webdriver.By,
     until = webdriver.until;
-    WebElement = webdriver.WebElement;
-
 
 var driver = new webdriver.Builder()
     .forBrowser("phantomjs")
     .build();
 
-driver.get('http://www.google.com');
+driver.get('https://port20-poc.herokuapp.com/');
 
-var searchTxtbox = driver.findElement(By.name('q'));
+var customText = driver.findElement(By.xpath('//*/pre[text()[contains(., \'Hello Zenfolio!\')]]'));
 
-if(searchTxtbox.isDisplayed()) {
+if(customText.isDisplayed()) {
     console.log('Found');
 } else {
     console.log('Not Found')
