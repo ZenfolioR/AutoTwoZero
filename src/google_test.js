@@ -11,7 +11,7 @@ driver.get('https://port20-poc.herokuapp.com/');
 var customText = driver.findElement(By.xpath('//*/pre[text()[contains(., \'Hello Zenfolio!\')]]'));
 
 if(customText.isDisplayed()) {
-    console.log('Found');
+    console.log('Hello Zenfolio message found. Mocha + Chai FTW');
 } else {
     console.log('Not Found')
 }
